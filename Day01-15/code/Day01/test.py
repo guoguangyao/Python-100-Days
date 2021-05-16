@@ -23,8 +23,20 @@
 
 
 # 输入半径
+
 # 输入圆的半径计算计算周长和面积
-# f_radius = float(input("请输入圆的半径： "))
-# f_circle = 3.14 * 2 * f_radius
-# f_squre = 3.14 * (f_radius **2)
-# print("半径为%.2fm的圆的周长是%.2fm, 面积是%.2f㎡" %(f_radius, f_circle,f_squre))
+import math
+f_radius = float(input("请输入圆的半径： "))
+f_circle = math.pi * 2 * f_radius
+f_squre = math.pi * (f_radius **2)
+print("半径为%.2fm的圆的周长是%.2fm, 面积是%.2f㎡" %(f_radius, f_circle,f_squre))
+
+# 练习3：输入年份判断是不是闰年。
+
+year = int(input("请输入年份： "))
+def is_leap(year):
+    result = "是闰年" if (year % 4 == 0 and year % 100 != 0 or year % 400 == 0) else "不是闰年"
+    print(str(year) + "年" + result)
+
+is_leap(year)
+
