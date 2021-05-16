@@ -6,6 +6,7 @@ import turtle
 
 def draw_rectangle(x, y, width, height):
     """绘制矩形"""
+    turtle.speed(1)
     turtle.goto(x, y)
     turtle.pencolor('red')
     turtle.fillcolor('red')
@@ -20,6 +21,7 @@ def draw_rectangle(x, y, width, height):
 
 def draw_star(x, y, radius):
     """绘制五角星"""
+    turtle.speed(1)
     turtle.setpos(x, y)
     pos1 = turtle.pos()
     turtle.circle(-radius, 72)
@@ -42,9 +44,10 @@ def draw_star(x, y, radius):
 
 def main():
     """主程序"""
-    turtle.speed(12)
+    turtle.speed(1)
     turtle.penup()
     x, y = -270, -180
+
     # 画国旗主体
     width, height = 540, 360
     draw_rectangle(x, y, width, height)

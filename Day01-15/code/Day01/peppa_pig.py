@@ -1,6 +1,7 @@
 """
 绘制小猪佩奇
 """
+import turtle
 from turtle import *
 
 
@@ -183,14 +184,15 @@ def setting():
     # 隐藏海龟
     hideturtle()
     colormode(255)
-    color((255, 155, 192), "pink")
+    color((255, 155, 192), "blue")
     setup(840, 500)
-    speed(10)
+    speed(16)
 
 
 def main():
     """主函数"""
-    setting() 
+
+    setting()
     nose(-100, 100)
     head(-69, 167)
     ears(0, 160)
