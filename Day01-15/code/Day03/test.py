@@ -7,15 +7,32 @@
 #     print(result)
 # check_user_info(username,pwd)
 
-f_value = float(input("请输入长度： "))
-s_unit = input("请输入单位： ")
-
-def switch_unit (f_value, s_unit):
-    if s_unit == "in" or s_unit == "英寸":
-        print("%.2f英寸 = %.2f厘米" %(f_value, f_value * 2.54))
-    elif s_unit == "cm" or s_unit == "厘米":
-        print("%f.2厘米 = %f.2英寸" % (f_value, f_value / 2.54))
-    else:
-        print("请输入有效的单位： ")
-
-switch_unit(f_value, s_unit)
+# f_value = float(input("请输入长度： "))
+# s_unit = input("请输入单位： ")
+#
+# def switch_unit (f_value, s_unit):
+#     if s_unit == "in" or s_unit == "英寸":
+#         print("%.2f英寸 = %.2f厘米" %(f_value, f_value * 2.54))
+#     elif s_unit == "cm" or s_unit == "厘米":
+#         print("%f.2厘米 = %f.2英寸" % (f_value, f_value / 2.54))
+#     else:
+#         print("请输入有效的单位： ")
+#
+# switch_unit(f_value, s_unit)
+# f_score = float(input("请输入分数： "))
+#
+# def switch_score (f_score):
+#     if f_score >= 90:
+#         grade = "A"
+#     elif f_score >= 80:
+#         grade = "B"
+#     elif f_score >= 70:
+#         grade = "C"
+#     elif f_score >= 60:
+#         grade = "D"
+#     else:
+#         grade = "E"
+#
+#     print("成绩是%s" % grade)
+#
+# switch_score(f_score)
